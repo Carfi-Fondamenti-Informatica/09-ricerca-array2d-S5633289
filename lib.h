@@ -1,2 +1,2 @@
-bool funzione(char [10][20],  char[10], int &);
+bool funzione(char [10][20],  char[20], int &);
 
