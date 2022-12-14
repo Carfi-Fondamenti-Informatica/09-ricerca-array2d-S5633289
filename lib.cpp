@@ -7,7 +7,7 @@ bool funzione(char Array[10][20], char Array2[20], int &pos) {
             if (Array2[j] != Array[i][j]) {
                 j = 20;
             } else {
-                pos = i + 1;
+                pos = i;
                 return true;
             }
         }
