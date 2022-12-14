@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void funzione(char Array[10][20], char Array2[20]) {
+int funzione(char Array[10][20], char Array2[20]) {
     int a = -1;
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 20; j++) {
@@ -15,8 +15,5 @@ void funzione(char Array[10][20], char Array2[20]) {
             }
         }
     }
-    if (a != -1) {
-        cout << a;
-    } else { cout << "non presente"; }
-
+    return a;
 }
