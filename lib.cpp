@@ -9,10 +9,10 @@ void funzione(char Array[10][20], char Array2[20]) {
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 20; j++) {
             if (Array2[j] != Array[i][j]) {
-                break;
+                j=20;
             } else {
                 a = i + 1;
-                i = 10;
+
             }
         }
     }
