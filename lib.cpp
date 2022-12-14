@@ -5,14 +5,19 @@
 using namespace std;
 
 void funzione(char Array[10][20], char Array2[20]) {
-    int a = 0;
-    for (int i = 0; i <= 10; i++) {
-        if (Array[i] == Array2) {
-            a = i;
+    int a = -1;
+    for (int i = 0; i < 10; i++) {
+        for (int j = 0; j < 20; j++) {
+            if (Array2[j] != Array[i][j]) {
+                break;
+            } else {
+                a = i + 1;
+                i = 10;
+            }
         }
     }
-    if (a != 0) {
+    if (a != -1) {
         cout << a;
-    } else { cout << 'non presente'; }
+    } else { cout << "non presente"; }
 
 }
