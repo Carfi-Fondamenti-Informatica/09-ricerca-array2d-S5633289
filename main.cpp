@@ -7,7 +7,6 @@ int main() {
     char Array[10][20];
     char Array2[20];
 
-
     for (int i = 0; i < 10; i++) {
         cin >> Array[i];
     }
